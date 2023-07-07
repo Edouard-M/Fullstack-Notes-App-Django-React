@@ -1,0 +1,6 @@
+flake8
+django
+pytest
+pytest-cov
+pytest-mock
+coloredlogs
