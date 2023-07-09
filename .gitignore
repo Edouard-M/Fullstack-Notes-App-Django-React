@@ -7,6 +7,5 @@ ENV/
 # VSCode
 .vscode/
 
-#__pycache__
-api/__pycache__
-mynotes/__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
