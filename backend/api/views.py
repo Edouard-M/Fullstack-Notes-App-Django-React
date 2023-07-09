@@ -58,6 +58,16 @@ def getNote(request, primary_key):
     return Response(serializer.data)
 
 
+@api_view(['POST'])
+def createNote(request):
+    data = request.data
+    note = Note.objects.create(
+        body=data['body']
+    )
+    serializer = NoteSerializer(note, many=False)
+    return Response(serializer.data)
+
+
 @api_view(['PUT'])
 def updateNote(request, primary_key):
     print("TEST")
@@ -69,3 +79,10 @@ def updateNote(request, primary_key):
         serializer.save()
 
     return Response(serializer.data)
+
+
+@api_view(['DELETE'])
+def deleteNote(request, primary_key):
+    note = Note.objects.get(id=primary_key)
+    note.delete()
+    return Response('Note was deleted')
