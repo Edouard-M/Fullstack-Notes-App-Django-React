@@ -33,4 +33,4 @@ Language      | Python (v3.10) | Javascript - HTML - CSS
 > **DELETE** /notes/id
 
 ## Preview of the project :
-> add image here
+![demo1](.demo/Demo#1.png)
