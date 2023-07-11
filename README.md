@@ -32,5 +32,8 @@ Language      | Python (v3.10) | Javascript - HTML - CSS
 ### Delete a note by primary key :
 > **DELETE** /notes/id
 
+## Database Model :
+![demo1](demo/model.png)
+
 ## Preview of the project :
 ![demo1](demo/Demo1.png)
